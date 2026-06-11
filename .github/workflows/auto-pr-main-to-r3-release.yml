@@ -44,7 +44,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr create \
-            --base R3-Release \
+            --base R3-Develop \
             --head main \
             --title "chore: Auto PR — merge main into R3-Develop ($(date +'%Y-%m-%d %H:%M UTC'))" \
             --body "## 🤖 Automated Pull Request
