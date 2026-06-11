@@ -31,10 +31,7 @@ jobs:
         run: |
           echo " Checking if target branch '$TARGET_BRANCH' exists on remote..."
 
-          BRANCH_EXISTS=$(gh api \
-            repos/${{ github.repository }}/branches/$TARGET_BRANCH \
-            --silent \
-            -t '{{ .name }}' 2>/dev/null || echo "")
+          BRANCH_EXISTS=$(git ls-remote --heads origin "refs/heads/$TARGET_BRANCH")
 
           if [ -z "$BRANCH_EXISTS" ]; then
             echo "ERROR: Target branch '$TARGET_BRANCH' does not exist in the repository."
