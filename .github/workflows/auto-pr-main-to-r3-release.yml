@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  TARGET_BRANCH: R3-Develop-test
+  TARGET_BRANCH: R3-Develop
 
 jobs:
   create-pull-request:
