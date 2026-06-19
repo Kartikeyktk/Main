@@ -1,7 +1,7 @@
 # Getting Started
 
 Welcome to your new CAP project.
-Test
+Test2
 
 It contains these folders and files, following our recommended project layout:
 
