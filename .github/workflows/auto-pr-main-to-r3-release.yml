@@ -3,10 +3,10 @@ name: Auto PR — Main to R3-Develop
 on:
   push:
     branches:
-      - main
+      - feature/source-from-main
 
 env:
-  TARGET_BRANCH: R3-Develop
+  TARGET_BRANCH: feature/target-from-development
 
 jobs:
   create-pull-request:
