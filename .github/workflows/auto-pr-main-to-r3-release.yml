@@ -9,13 +9,12 @@ on:
 env:
   SOURCE_BRANCH: main
   TARGET_BRANCH: R3-Develop
-  ALLOWED_MERGE_SOURCE: development
 
 jobs:
   create-pull-request:
     name: Create Auto PR
     # Only run if the PR was actually merged AND came from the allowed source branch
-    if: github.event.pull_request.merged == true && github.event.pull_request.head.ref == 'development'
+    if: github.event.pull_request.merged == true && github.event.pull_request.head.ref == 'development1'
     runs-on: ubuntu-latest
     permissions:
       contents: read
