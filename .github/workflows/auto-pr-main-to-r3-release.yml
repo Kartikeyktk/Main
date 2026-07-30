@@ -14,7 +14,7 @@ jobs:
   create-pull-request:
     name: Create Auto PR
     # Only run if the PR was actually merged AND came from the allowed source branch
-    if: github.event.pull_request.merged == true && github.event.pull_request.head.ref == 'development1'
+    if: github.event.pull_request.merged == true && github.event.pull_request.head.ref == 'development'
     runs-on: ubuntu-latest
     permissions:
       contents: read
